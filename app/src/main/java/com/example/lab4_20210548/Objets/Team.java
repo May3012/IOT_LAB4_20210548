@@ -1,6 +1,8 @@
 package com.example.lab4_20210548.Objets;
 
-public class Team {
+import java.io.Serializable;
+
+public class Team implements Serializable {
 
     private String strTeam;
     private String intRank;

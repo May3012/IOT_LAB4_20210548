@@ -3,7 +3,7 @@ package com.example.lab4_20210548.Objets;
 import java.io.Serializable;
 import java.util.List;
 
-public class LeagueXCountry implements Serializable {
+public class LeagueXCountry {
     List<League> leagues;
     List<League> countries;
 
