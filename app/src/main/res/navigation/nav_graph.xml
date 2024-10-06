@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLigas">
+
+    <fragment
+        android:id="@+id/fragmentLigas"
+        android:name="com.example.lab4_20210548.Fragments.FragmentLigas"
+        android:label="fragment_ligas"
+        tools:layout="@layout/fragment_ligas" >
+        <action
+            android:id="@+id/action_fragmentLigas_to_fragmentPositions"
+            app:destination="@id/fragmentPositions" />
+        <action
+            android:id="@+id/action_fragmentLigas_to_fragmentResults"
+            app:destination="@id/fragmentResults" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResults"
+        android:name="com.example.lab4_20210548.Fragments.FragmentResults"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <action
+            android:id="@+id/action_fragmentResults_to_fragmentLigas"
+            app:destination="@id/fragmentLigas" />
+        <action
+            android:id="@+id/action_fragmentResults_to_fragmentPositions"
+            app:destination="@id/fragmentPositions" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPositions"
+        android:name="com.example.lab4_20210548.Fragments.FragmentPositions"
+        android:label="fragment_positions"
+        tools:layout="@layout/fragment_positions" >
+        <action
+            android:id="@+id/action_fragmentPositions_to_fragmentResults"
+            app:destination="@id/fragmentResults" />
+        <action
+            android:id="@+id/action_fragmentPositions_to_fragmentLigas"
+            app:destination="@id/fragmentLigas" />
+    </fragment>
+</navigation>

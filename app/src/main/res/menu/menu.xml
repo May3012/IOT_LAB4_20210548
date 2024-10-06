@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ligas"
+        android:enabled="true"
+        android:icon="@drawable/baseline_sports_soccer_24"
+        android:title="Ligas"
+        />
+    <item
+        android:id="@+id/position"
+        android:enabled="true"
+        android:icon="@drawable/baseline_format_list_numbered_24"
+        android:title="Posiciones"/>
+    <item
+        android:id="@+id/results"
+        android:enabled="true"
+        android:icon="@drawable/baseline_bar_chart_24"
+        android:title="Resultados"/>
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentResults">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3F51B5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="RESULTADOS DE LOS PARTIDOS"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Sección de búsqueda -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/searchEditTextResultLiga"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:hint="idLiga"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#D3D3D3"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/searchEditTextResultTemporada"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Season"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#D3D3D3"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/searchEditTextResultRonda"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Ronda"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#D3D3D3"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/searchButtonResult"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button"
+            android:text="Buscar"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewResult"
+        android:layout_width="375dp"
+        android:layout_height="559dp"
+        android:layout_below="@id/searchButton"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp" />
+
+</FrameLayout>
